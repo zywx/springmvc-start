@@ -1,6 +1,7 @@
-package com.xfs.learn.service.impl;
+package com.github.zywx.mvclearn.service.impl;
 
-import com.xfs.learn.service.HelloService;
+import com.github.zywx.mvclearn.service.HelloService;
+
 import org.springframework.stereotype.Service;
 
 /**

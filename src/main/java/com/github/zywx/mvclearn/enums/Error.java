@@ -1,4 +1,4 @@
-package com.xfs.learn.enums;
+package com.github.zywx.mvclearn.enums;
 
 /**
  * A simple class desc

@@ -1,4 +1,4 @@
-package com.xfs.learn.service;
+package com.github.zywx.mvclearn.service;
 
 /**
  * A simple class desc

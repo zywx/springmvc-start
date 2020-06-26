@@ -1,7 +1,8 @@
-package com.xfs.learn.controller;
+package com.github.zywx.mvclearn.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.xfs.learn.service.impl.HelloServiceImpl;
+import com.github.zywx.mvclearn.service.impl.HelloServiceImpl;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

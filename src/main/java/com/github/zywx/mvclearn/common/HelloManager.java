@@ -1,4 +1,4 @@
-package com.xfs.learn.common;
+package com.github.zywx.mvclearn.common;
 
 /**
  * A simple class desc

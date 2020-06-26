@@ -2,12 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.xfs.learn</groupId>
-  <artifactId>jx-springmvc</artifactId>
+  <groupId>com.github.zywx.mvclearn</groupId>
+  <artifactId>springmvc-start</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>jx-springmvc Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>springmvc-start</name>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <java.encoding>UTF-8</java.encoding>
+    <version.spring>4.3.27.RELEASE</version.spring>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -19,8 +24,14 @@
 
     <!-- 个人工具包 -->
     <dependency>
-      <groupId>com.xfs.learn</groupId>
-      <artifactId>jx-lang</artifactId>
+      <groupId>com.github.zywx.commons</groupId>
+      <artifactId>commons-basic</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.zywx.commons</groupId>
+      <artifactId>commons-gateway</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
 
     <!-- mysql驱动包 -->
@@ -34,12 +45,12 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.3.1.RELEASE</version>
+      <version>${version.spring}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.3.1.RELEASE</version>
+      <version>${version.spring}</version>
     </dependency>
 
     <!-- apache包-->
@@ -53,14 +64,14 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>21.0</version>
+      <version>28.1-jre</version>
     </dependency>
 
     <!-- apache包-->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
-      <version>1.2.44</version>
+      <version>1.2.70</version>
     </dependency>
 
     <!-- log-->
@@ -115,18 +126,8 @@
     </dependency>
   </dependencies>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.xfs.learn</groupId>
-        <artifactId>jx-lang</artifactId>
-        <version>${version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
   <build>
-    <finalName>jx-springmvc</finalName>
+    <finalName>springmvc-start</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

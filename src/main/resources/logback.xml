@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="APP_NAME" value="jx-springmvc" />
+    <property name="APP_NAME" value="springmvc-start" />
     <!-- 到apache-tomcat按照目录查看日志 -->
     <property name="LOG_PATH" value="${catalina.base}/logs" />
     <property name="LOG_FILE" value="${LOG_PATH}/application.log" />
@@ -25,7 +25,7 @@
         <appender-ref ref="APPLICATION" />
     </appender>
 
-    <logger name="com.xfs.learn" level="INFO" additivity="false">
+    <logger name="com.github.zywx" level="INFO" additivity="false">
         <appender-ref ref="XAPP"/>
     </logger>
 
